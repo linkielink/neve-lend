@@ -53,8 +53,8 @@ export const CosmosKitProvider: React.FC<{ children: React.ReactNode }> = ({
           metadata: {
             name: "Neve",
             description: "Neve - powered by Mars Protocol",
-            url: "https://neve-lend.com/",
-            icons: ["https://neve-lend.com/favicon-96x96.png"],
+            url: "https://neve-lend.vercel.app/",
+            icons: ["https://neve-lend.vercel.app/favicon-96x96.png"],
           },
         },
       }}

@@ -9,7 +9,7 @@ export async function generateMetadata({
   const { symbol } = await params;
   return {
     title: `Neve - ${symbol.toUpperCase()} Market`,
-    metadataBase: new URL("https://neve-lend.com"),
+    metadataBase: new URL("https://neve-lend.vercel.app"),
     description: `Explore the ${symbol.toUpperCase()} market on Neve.`,
     keywords: [
       "ibc",
@@ -22,14 +22,14 @@ export async function generateMetadata({
     ],
     openGraph: {
       type: "website",
-      url: `https://neve-lend.com/markets/${symbol}`,
+      url: `https://neve-lend.vercel.app/markets/${symbol}`,
       title: `Neve - ${symbol.toUpperCase()} Market`,
       locale: "en_US",
       description: `Explore the ${symbol} market on Neve.`,
       siteName: "Neve",
       images: [
         {
-          url: "https://neve-lend.com/banner.jpg",
+          url: "https://neve-lend.vercel.app/banner.jpg",
           width: 1280,
           height: 720,
           alt: "Neve",
@@ -43,7 +43,7 @@ export async function generateMetadata({
       description: `Explore the ${symbol.toUpperCase()} market on Neve.`,
       images: [
         {
-          url: "https://neve-lend.com/banner.jpg",
+          url: "https://neve-lend.vercel.app/banner.jpg",
           width: 1280,
           height: 720,
           alt: "Neve",
