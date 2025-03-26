@@ -1,4 +1,4 @@
-![https://neve-lend.vercel.app](https://raw.githubusercontent.com/linkielink/neve-lend/main/public/banner.png)
+![https://neve-lend.com](https://raw.githubusercontent.com/linkielink/neve-lend/main/public/banner.png)
 
 # Neve - Leand and borrow on Neutron with ease
 
