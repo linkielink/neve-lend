@@ -38,7 +38,7 @@ export default function HealthFactorModal(props: Props) {
                     healthFactor >= 2.5
                       ? "text-green-500"
                       : healthFactor > 1.2
-                      ? "text-teal-500"
+                      ? "text-yellow-500"
                       : "text-red-500"
                   }`}
                 >
