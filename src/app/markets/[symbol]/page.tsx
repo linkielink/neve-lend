@@ -1,14 +1,16 @@
 import MarketDetails from "@/components/markets/MarketDetails";
+import { Metadata } from "next";
 
 export async function generateMetadata({
   params,
 }: {
-  params: { symbol: string };
-}) {
+  params: Promise<{ symbol: string }>;
+}): Promise<Metadata> {
+  const { symbol } = await params;
   return {
-    title: `Neve - ${params.symbol.toUpperCase()} Market`,
+    title: `Neve - ${symbol.toUpperCase()} Market`,
     metadataBase: new URL("https://neve-lend.com"),
-    description: `Explore the ${params.symbol.toUpperCase()} market on Neve.`,
+    description: `Explore the ${symbol.toUpperCase()} market on Neve.`,
     keywords: [
       "ibc",
       "neutron",
@@ -16,14 +18,14 @@ export async function generateMetadata({
       "borrow",
       "earn",
       "mars protocol",
-      params.symbol,
+      symbol,
     ],
     openGraph: {
       type: "website",
-      url: `https://neve-lend.com/markets/${params.symbol}`,
-      title: `Neve - ${params.symbol.toUpperCase()} Market`,
+      url: `https://neve-lend.com/markets/${symbol}`,
+      title: `Neve - ${symbol.toUpperCase()} Market`,
       locale: "en_US",
-      description: `Explore the ${params.symbol} market on Neve.`,
+      description: `Explore the ${symbol} market on Neve.`,
       siteName: "Neve",
       images: [
         {
@@ -37,8 +39,8 @@ export async function generateMetadata({
     twitter: {
       card: "summary_large_image",
       site: "@Neve_Lend",
-      title: `Neve - ${params.symbol.toUpperCase()} Market`,
-      description: `Explore the ${params.symbol.toUpperCase()} market on Neve.`,
+      title: `Neve - ${symbol.toUpperCase()} Market`,
+      description: `Explore the ${symbol.toUpperCase()} market on Neve.`,
       images: [
         {
           url: "https://neve-lend.com/banner.jpg",
