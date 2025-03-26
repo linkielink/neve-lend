@@ -16,7 +16,7 @@ export const metaData: { [key: string]: Metadata } = {
       siteName: "Neve",
       images: [
         {
-          url: "https://neve-lend.vercel.app/banner.jpg",
+          url: "https://neve-lend.vercel.app/banner.png",
           width: 1280,
           height: 720,
           alt: "Neve",
@@ -31,7 +31,7 @@ export const metaData: { [key: string]: Metadata } = {
         "Lend and borrow on Neutron with easy. Simple, secure, and fast.",
       images: [
         {
-          url: "https://neve-lend.vercel.app/banner.jpg",
+          url: "https://neve-lend.vercel.app/banner.png",
           width: 1280,
           height: 720,
           alt: "Neve",
@@ -53,7 +53,7 @@ export const metaData: { [key: string]: Metadata } = {
       siteName: "Neve",
       images: [
         {
-          url: "https://neve-lend.vercel.app/banner.jpg",
+          url: "https://neve-lend.vercel.app/banner.png",
           width: 1280,
           height: 720,
           alt: "Neve",
@@ -67,7 +67,7 @@ export const metaData: { [key: string]: Metadata } = {
       description: "Explore the markets on Neve.",
       images: [
         {
-          url: "https://neve-lend.vercel.app/banner.jpg",
+          url: "https://neve-lend.vercel.app/banner.png",
           width: 1280,
           height: 720,
           alt: "Neve",

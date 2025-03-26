@@ -29,7 +29,7 @@ export async function generateMetadata({
       siteName: "Neve",
       images: [
         {
-          url: "https://neve-lend.vercel.app/banner.jpg",
+          url: "https://neve-lend.vercel.app/banner.png",
           width: 1280,
           height: 720,
           alt: "Neve",
@@ -43,7 +43,7 @@ export async function generateMetadata({
       description: `Explore the ${symbol.toUpperCase()} market on Neve.`,
       images: [
         {
-          url: "https://neve-lend.vercel.app/banner.jpg",
+          url: "https://neve-lend.vercel.app/banner.png",
           width: 1280,
           height: 720,
           alt: "Neve",
