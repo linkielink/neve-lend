@@ -11,6 +11,7 @@ interface FormattedValueProps {
   prefix?: string; // Prefix to add before the value (e.g., "$")
   suffix?: string; // Suffix to add after the value (e.g., "%")
   useCompactNotation?: boolean; // Whether to use compact notation (K, M, B) for large values
+  smallValueThreshold?: number; // Threshold for using subscript notation (default 0.00001)
 }
 
 /**
@@ -30,6 +31,7 @@ const FormattedValue: React.FC<FormattedValueProps> = ({
   prefix = "",
   suffix = "",
   useCompactNotation = true,
+  smallValueThreshold,
 }) => {
   // Handle currency prefix - if isCurrency is true and no prefix is provided, use "$"
   const effectivePrefix = isCurrency && !prefix ? "$" : prefix;
@@ -37,7 +39,8 @@ const FormattedValue: React.FC<FormattedValueProps> = ({
   // Format the value according to our rules
   const formatData = formatValue(value, {
     isCurrency,
-    smallValueThreshold: 0.00001, // Use subscript notation for values below this
+    // For currency values, use 0.01 as default smallValueThreshold, otherwise use provided value or default (0.00001)
+    smallValueThreshold: isCurrency ? 0.01 : smallValueThreshold || 0.00001,
     largeValueThreshold: 1000, // Use compact notation (K, M, B) for values above this
     useCompactNotation,
     significantDigits: 4, // Increased from 4 to 6 to show more digits for small values

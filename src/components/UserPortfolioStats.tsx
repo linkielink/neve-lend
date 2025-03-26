@@ -126,7 +126,7 @@ const UserPortfolioStats: React.FC = () => {
                     healthFactor >= 2.5
                       ? "text-green-500"
                       : healthFactor > 1.2
-                      ? "text-teal-500"
+                      ? "text-yellow-500"
                       : "text-red-500"
                   }
                   value={healthFactor.toString()}

@@ -255,7 +255,7 @@ const AssetActionModal: React.FC<AssetActionModalProps> = ({
                             projectedHealthFactor >= 2.5
                               ? "text-green-500"
                               : projectedHealthFactor > 1.2
-                              ? "text-teal-500"
+                              ? "text-yellow-500"
                               : "text-red-500"
                           }`}
                         >

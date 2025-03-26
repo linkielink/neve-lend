@@ -1,5 +1,6 @@
 "use client";
 
+import AssetSubline from "@/components/assets/AssetSubline";
 import AssetTable from "@/components/assets/AssetTable";
 import InfoAlert from "@/components/InfoAlert";
 import useHealthComputer from "@/hooks/useHealthComputer";
@@ -325,6 +326,12 @@ const Markets = () => {
               getApy={getSupplyApy}
               action="withdraw"
               isLoading={userPositionsLoading}
+              sublineContent={
+                <AssetSubline
+                  mode="supplies"
+                  suppliesItems={userDepositItems}
+                />
+              }
             />
           )}
 
@@ -359,6 +366,13 @@ const Markets = () => {
               getApy={getBorrowApy}
               action="repay"
               isLoading={userPositionsLoading}
+              sublineContent={
+                <AssetSubline
+                  mode="borrows"
+                  suppliesItems={userDepositItems}
+                  borrowItems={userDebtItems}
+                />
+              }
             />
           )}
 

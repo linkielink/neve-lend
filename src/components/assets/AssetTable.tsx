@@ -21,6 +21,7 @@ interface AssetTableProps {
   isEmpty?: boolean;
   infoAlert?: ReactNode;
   headerElement?: ReactNode;
+  sublineContent?: ReactNode;
 }
 
 const AssetTable: React.FC<AssetTableProps> = ({
@@ -37,6 +38,7 @@ const AssetTable: React.FC<AssetTableProps> = ({
   isEmpty = false,
   infoAlert,
   headerElement,
+  sublineContent,
 }) => {
   const [sortColumn, setSortColumn] = useState<SortColumn>(initialSortColumn);
   const [sortDirection, setSortDirection] =
@@ -201,9 +203,16 @@ const AssetTable: React.FC<AssetTableProps> = ({
   return (
     <div className="bg-white dark:bg-zinc-900 sm:rounded-lg border border-gray-200 dark:border-zinc-800 shadow-sm mb-4 sm:mb-6">
       {/* Table header */}
-      <div className="flex items-center justify-between px-4 sm:px-6 py-4 border-b border-gray-100 dark:border-zinc-800">
-        <h2 className="text-lg sm:text-xl font-medium">{title}</h2>
-        {headerElement}
+      <div className="border-b border-gray-100 dark:border-zinc-800">
+        <div className="flex items-center px-4 sm:px-6 py-4">
+          <h2 className="text-lg sm:text-xl font-medium">{title}</h2>
+          {headerElement}
+        </div>
+        {sublineContent && (
+          <div className="flex items-center px-4 sm:px-6 pb-4 text-sm">
+            {sublineContent}
+          </div>
+        )}
       </div>
 
       {!isLoading && infoAlert && infoAlert}

@@ -78,7 +78,7 @@ export const Button: React.FC<ButtonProps> = ({
     primary: "bg-yellow-500 hover:bg-yellow-600 text-white",
     secondary: "bg-teal-600 hover:bg-teal-500 text-white",
     gradient:
-      "bg-gradient-to-r from-teal-600 to-yellow-400 text-white hover:bg-gradient-to-l",
+      "bg-gradient-to-r from-teal-600 to-yellow-400 text-white hover:from-teal-700 hover:to-yellow-500",
     plain:
       "bg-teal-600 text-white dark:bg-teal-900 hover:bg-teal-300 dark:hover:bg-teal-600",
   };
