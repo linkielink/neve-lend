@@ -1,5 +1,6 @@
 "use client";
 
+import { metaData } from "@/app/metadata";
 import InstanceHeader from "@/components/InstanceHeader";
 import MarketSearch from "@/components/markets/MarketSearch";
 import MarketStats from "@/components/markets/MarketStats";
@@ -13,6 +14,7 @@ import { calculateUsdValue } from "@/utils/format";
 import BigNumber from "bignumber.js";
 import { useCallback, useEffect, useState } from "react";
 
+export const metadata = metaData.markets;
 // Define the markets page component
 export default function MarketsPage() {
   // Get market data

@@ -1,4 +1,7 @@
 import { Dashboard, InstanceHeader, UserPortfolioStats } from "@/components";
+import { metaData } from "@/app/metadata";
+
+export const metadata = metaData.home;
 
 export default function Home() {
   return (
