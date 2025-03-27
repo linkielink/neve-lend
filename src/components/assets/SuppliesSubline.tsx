@@ -70,7 +70,7 @@ const SuppliesSubline: React.FC<SuppliesSublineProps> = ({ suppliesItems }) => {
       </div>
       <div className="flex items-center px-3 py-1 bg-gray-50 dark:bg-zinc-800 border border-gray-200 dark:border-zinc-700 rounded-md">
         <span className="text-gray-600 dark:text-gray-400 mr-2">
-          Collateral
+          Collateral power
         </span>
         <span className="font-medium">
           <FormattedValue
