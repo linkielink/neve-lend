@@ -204,7 +204,11 @@ const AssetTable: React.FC<AssetTableProps> = ({
     <div className="bg-white dark:bg-zinc-900 sm:rounded-lg border border-gray-200 dark:border-zinc-800 shadow-sm mb-4 sm:mb-6">
       {/* Table header */}
       <div className="border-b border-gray-100 dark:border-zinc-800">
-        <div className="flex items-center px-4 sm:px-6 py-4">
+        <div
+          className={`flex items-center px-4 sm:px-6 py-4 ${
+            headerElement ? "justify-between" : ""
+          }`}
+        >
           <h2 className="text-lg sm:text-xl font-medium">{title}</h2>
           {headerElement}
         </div>
