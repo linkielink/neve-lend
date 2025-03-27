@@ -50,7 +50,7 @@ export default function HealthFactorModal(props: Props) {
               <div className="mt-3 relative pt-2 pb-2">
                 <div className="relative h-4">
                   {/* Gradient Bar */}
-                  <div className="h-2 rounded-full overflow-hidden bg-gradient-to-r from-red-500 via-teal-500 to-green-500"></div>
+                  <div className="h-2 rounded-full overflow-hidden bg-gradient-to-r from-red-500 via-yellow-500 to-green-500"></div>
 
                   {/* Liquidation Value Line */}
                   <div

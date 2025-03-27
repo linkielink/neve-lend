@@ -190,7 +190,7 @@ export default function MarketDetails() {
                     metrics.depositCapUsagePercent >= 100
                       ? "text-red-500"
                       : metrics.depositCapUsagePercent >= 95
-                      ? "text-teal-500"
+                      ? "text-yellow-500"
                       : ""
                   }
                 />
