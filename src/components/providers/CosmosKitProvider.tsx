@@ -8,7 +8,6 @@ import { wallets as keplrWallets } from "@cosmos-kit/keplr";
 import { wallets as leapWallets } from "@cosmos-kit/leap";
 import { wallets as okxWallets } from "@cosmos-kit/okxwallet";
 import { ChainProvider } from "@cosmos-kit/react";
-import { wallets as stationWallets } from "@cosmos-kit/station";
 import { wallets as vectisWallets } from "@cosmos-kit/vectis";
 import { wallets as xdefiWallets } from "@cosmos-kit/xdefi";
 import "@interchain-ui/react/styles";
@@ -27,10 +26,9 @@ const wallets = [
   ...keplrWallets,
   ...leapWallets,
   ...cosmostationWallets,
-  ...vectisWallets,
-  ...okxWallets,
   ...xdefiWallets,
-  ...stationWallets,
+  ...okxWallets,
+  ...vectisWallets,
 ];
 
 export const CosmosKitProvider: React.FC<{ children: React.ReactNode }> = ({
