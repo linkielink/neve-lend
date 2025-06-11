@@ -18,7 +18,7 @@ const chainConfig: ChainConfig = {
     // Tokens URL
     tokensUrl:
       process.env.NEXT_PUBLIC_TOKENS ||
-      "https://neutron-cache-api.onrender.com/neutron-1/tokens",
+      "https://cache.marsprotocol.io/api/neutron-1/tokens",
   },
 
   // Base64 encoded queries
