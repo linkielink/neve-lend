@@ -206,7 +206,6 @@ const AssetActionModal: React.FC<AssetActionModalProps> = ({
             <span className="text-sm text-gray-900 dark:text-white">
               <FormattedValue
                 value={usdValue}
-                prefix="$"
                 maxDecimals={2}
                 isCurrency={true}
               />

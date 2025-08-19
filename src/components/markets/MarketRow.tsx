@@ -89,7 +89,7 @@ const MarketRow: React.FC<MarketRowProps> = ({
           <div className="text-base text-gray-900 dark:text-white">
             <FormattedValue
               value={market.calculatedValues.suppliedUsd}
-              prefix="$"
+              isCurrency={true}
             />
           </div>
           <div className="text-xs text-gray-500 dark:text-gray-400 mb-2">
@@ -121,7 +121,7 @@ const MarketRow: React.FC<MarketRowProps> = ({
               <div className="text-base text-gray-900 dark:text-white">
                 <FormattedValue
                   value={market.calculatedValues.borrowedUsd}
-                  prefix="$"
+                  isCurrency={true}
                 />
               </div>
               <div className="text-xs text-gray-500 dark:text-gray-400 mb-2">
@@ -188,7 +188,7 @@ const MarketRow: React.FC<MarketRowProps> = ({
         >
           <FormattedValue
             value={market.calculatedValues.suppliedUsd}
-            prefix="$"
+            isCurrency={true}
           />
         </div>
         <div className="text-xs text-gray-500 dark:text-gray-400">
@@ -223,7 +223,7 @@ const MarketRow: React.FC<MarketRowProps> = ({
             >
               <FormattedValue
                 value={market.calculatedValues.borrowedUsd}
-                prefix="$"
+                isCurrency={true}
               />
             </div>
             <div className="text-xs text-gray-500 dark:text-gray-400">

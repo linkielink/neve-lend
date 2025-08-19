@@ -21,7 +21,7 @@ const MarketStats: React.FC<MarketStatsProps> = ({
           Total market size
         </div>
         <div className="text-2xl font-bold text-gray-900 dark:text-white">
-          <FormattedValue value={totalMarketSize} prefix="$" />
+          <FormattedValue value={totalMarketSize} isCurrency={true} />
         </div>
       </div>
       <div className="p-4 bg-white sm:rounded-lg shadow dark:bg-gray-900">
@@ -29,7 +29,7 @@ const MarketStats: React.FC<MarketStatsProps> = ({
           Total available
         </div>
         <div className="text-2xl font-bold text-gray-900 dark:text-white">
-          <FormattedValue value={totalAvailable} prefix="$" />
+          <FormattedValue value={totalAvailable} isCurrency={true} />
         </div>
       </div>
       <div className="p-4 bg-white sm:rounded-lg shadow dark:bg-gray-900">
@@ -37,7 +37,7 @@ const MarketStats: React.FC<MarketStatsProps> = ({
           Total borrows
         </div>
         <div className="text-2xl font-bold text-gray-900 dark:text-white">
-          <FormattedValue value={totalBorrows} prefix="$" />
+          <FormattedValue value={totalBorrows} isCurrency={true} />
         </div>
       </div>
     </div>
