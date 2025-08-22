@@ -28,7 +28,7 @@ export const metaData: { [key: string]: Metadata } = {
       site: "@Neve_Lend",
       title: "Neve - lend and borrow on Neutron with ease",
       description:
-        "Lend and borrow on Neutron with easy. Simple, secure, and fast.",
+        "Lend and borrow on Neutron with ease. Simple, secure and fast.",
       images: [
         {
           url: "https://neve-lend.com/banner.png",

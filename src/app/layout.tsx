@@ -21,8 +21,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Neve - powered by Mars Protocol",
-  description:
-    "Lend and borrow on Neutron with easy. Simple, secure, and fast.",
+  description: "Lend and borrow on Neutron with ease. Simple, secure and fast.",
 };
 
 export default function RootLayout({
